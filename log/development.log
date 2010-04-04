@@ -1,0 +1,173 @@
+
+
+Processing MythtvController#index (for 127.0.0.1 at 2010-04-03 22:09:40) [GET]
+
+ActionController::UnknownAction (No action responded to index. Actions: test):
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing MythtvController#test (for 127.0.0.1 at 2010-04-03 22:09:51) [GET]
+Completed in 219ms (View: 0, DB: 0) | 200 OK [http://localhost/mythtv/test]
+
+
+Processing MythtvController#test (for 127.0.0.1 at 2010-04-03 22:15:48) [GET]
+
+NameError (undefined local variable or method `s' for #<MythtvController:0x3648e88>):
+  app/controllers/mythtv_controller.rb:16:in `test'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (171.9ms)
+Rendered rescues/_request_and_response (15.6ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing MythtvController#test (for 127.0.0.1 at 2010-04-03 22:16:13) [GET]
+
+NoMethodError (undefined method `len' for #<MythtvController:0x33313e0>):
+  app/controllers/mythtv_controller.rb:17:in `test'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (312.5ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing MythtvController#test (for 127.0.0.1 at 2010-04-03 22:17:29) [GET]
+Completed in 234ms (View: 0, DB: 0) | 200 OK [http://localhost/mythtv/test]
+
+
+Processing ApplicationController#test (for 127.0.0.1 at 2010-04-03 22:26:30) [GET]
+
+SyntaxError (C:/Documents and Settings/Harry/rails/MythTvOnRails/app/controllers/mythtv_controller.rb:5: syntax error, unexpected ')', expecting '='
+C:/Documents and Settings/Harry/rails/MythTvOnRails/app/controllers/mythtv_controller.rb:28: syntax error, unexpected kEND, expecting ')'):
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (156.3ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing MythtvController#test (for 127.0.0.1 at 2010-04-03 22:28:02) [GET]
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://localhost/mythtv/test]
+
+
+Processing MythtvController#test (for 127.0.0.1 at 2010-04-03 22:28:33) [GET]
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://localhost/mythtv/test]
+
+
+Processing MythtvController#test (for 127.0.0.1 at 2010-04-03 22:28:37) [GET]
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://localhost/mythtv/test]
+
+
+Processing MythtvController#test (for 127.0.0.1 at 2010-04-03 22:28:51) [GET]
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://localhost/mythtv/test]
+
+
+Processing MythtvController#test (for 127.0.0.1 at 2010-04-03 22:33:38) [GET]
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://localhost/mythtv/test]
+
+
+Processing MythtvController#test (for 127.0.0.1 at 2010-04-03 22:33:39) [GET]
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://localhost/mythtv/test]
+
+
+Processing MythtvController#test (for 127.0.0.1 at 2010-04-04 10:18:41) [GET]
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://localhost/mythtv/test]
+
+
+Processing MythtvController#test (for 127.0.0.1 at 2010-04-04 10:20:33) [GET]
+
+ArgumentError (too few arguments):
+  app/controllers/mythtv_controller.rb:6:in `%'
+  app/controllers/mythtv_controller.rb:6:in `test'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (203.1ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing MythtvController#test (for 127.0.0.1 at 2010-04-04 10:21:11) [GET]
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://localhost/mythtv/test]
+
+
+Processing MythtvController#test (for 127.0.0.1 at 2010-04-04 10:21:49) [GET]
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://localhost/mythtv/test]
+
+
+Processing MythtvController#test (for 127.0.0.1 at 2010-04-04 10:25:43) [GET]
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://localhost/mythtv/test]
+
+
+Processing ApplicationController#test (for 127.0.0.1 at 2010-04-04 10:33:00) [GET]
+
+SyntaxError (C:/Documents and Settings/Harry/rails/MythTvOnRails/app/controllers/mythtv_controller.rb:6: syntax error, unexpected tIDENTIFIER, expecting ')'
+    str = connection.recv(22)
+       ^
+C:/Documents and Settings/Harry/rails/MythTvOnRails/app/controllers/mythtv_controller.rb:8: syntax error, unexpected tIDENTIFIER, expecting ')'
+    str = str + "\n" + connection.recv(11)
+       ^
+C:/Documents and Settings/Harry/rails/MythTvOnRails/app/controllers/mythtv_controller.rb:10: syntax error, unexpected tIDENTIFIER, expecting ')'
+    retMsg = connection.recv(8)
+          ^):
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (328.1ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
