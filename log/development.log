@@ -171,3 +171,321 @@ C:/Documents and Settings/Harry/rails/MythTvOnRails/app/controllers/mythtv_contr
 Rendered rescues/_trace (328.1ms)
 Rendered rescues/_request_and_response (0.0ms)
 Rendering rescues/layout (internal_server_error)
+
+
+Processing MythtvController#test (for 127.0.0.1 at 2010-04-04 15:14:16) [GET]
+
+NameError (undefined local variable or method `message' for #<MythtvController:0x380e698>):
+  app/controllers/mythtv_controller.rb:26:in `buildMessage'
+  app/controllers/mythtv_controller.rb:5:in `test'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (203.1ms)
+Rendered rescues/_request_and_response (15.6ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing MythtvController#test (for 127.0.0.1 at 2010-04-04 15:15:11) [GET]
+
+NameError (undefined local variable or method `message' for #<MythtvController:0x3588eb8>):
+  app/controllers/mythtv_controller.rb:26:in `buildMessage'
+  app/controllers/mythtv_controller.rb:5:in `test'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (187.5ms)
+Rendered rescues/_request_and_response (15.6ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing MythtvController#test (for 127.0.0.1 at 2010-04-04 15:15:37) [GET]
+Completed in 281ms (View: 0, DB: 0) | 200 OK [http://localhost/mythtv/test]
+
+
+Processing MythtvController#test (for 127.0.0.1 at 2010-04-04 15:17:29) [GET]
+Completed in 281ms (View: 0, DB: 0) | 200 OK [http://localhost/mythtv/test]
+
+
+Processing MythtvController#test (for 127.0.0.1 at 2010-04-04 15:30:55) [GET]
+Completed in 109ms (View: 0, DB: 0) | 200 OK [http://localhost/mythtv/test]
+
+
+Processing ApplicationController#test (for 127.0.0.1 at 2010-04-04 16:01:26) [GET]
+
+SyntaxError (C:/Documents and Settings/Harry/rails/MythTvOnRails/app/controllers/mythtv_controller.rb:8: syntax error, unexpected ')', expecting kEND
+C:/Documents and Settings/Harry/rails/MythTvOnRails/app/controllers/mythtv_controller.rb:17: syntax error, unexpected ')', expecting kEND):
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (171.9ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ApplicationController#test (for 127.0.0.1 at 2010-04-04 16:01:59) [GET]
+
+NoMethodError (undefined method `integer' for #<MythtvController:0x35d7398 @connection=#<TCPSocket:0x35d7320>>):
+  app/controllers/mythtv_controller.rb:41:in `getCommandResponse'
+  app/controllers/mythtv_controller.rb:15:in `connect'
+  app/controllers/mythtv_controller.rb:4:in `initialize'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (140.6ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing MythtvController#test (for 127.0.0.1 at 2010-04-04 16:02:15) [GET]
+
+ActionController::UnknownAction (No action responded to test. Actions: buildCommandString, connect, disconnect, executeCommand, getCommandResponse, and getRecordings):
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing MythtvController#getRecordings (for 127.0.0.1 at 2010-04-04 16:02:28) [GET]
+
+NameError (undefined local variable or method `getResponse' for #<MythtvController:0x3210168>):
+  app/controllers/mythtv_controller.rb:9:in `getRecordings'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (343.8ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing MythtvController#getRecordings (for 127.0.0.1 at 2010-04-04 16:02:55) [GET]
+Completed in 31ms (View: 0, DB: 0) | 200 OK [http://localhost/mythtv/getRecordings]
+
+
+Processing MythtvController#getRecordings (for 127.0.0.1 at 2010-04-04 16:02:59) [GET]
+Completed in 31ms (View: 0, DB: 0) | 200 OK [http://localhost/mythtv/getRecordings]
+
+
+Processing MythtvController#getRecordings (for 127.0.0.1 at 2010-04-04 21:06:59) [GET]
+Completed in 375ms (View: 109, DB: 0) | 200 OK [http://localhost/mythtv/getRecordings]
+
+
+Processing MythtvController#getRecordings (for 127.0.0.1 at 2010-04-04 21:27:21) [GET]
+Completed in 391ms (View: 109, DB: 0) | 200 OK [http://localhost/mythtv/getRecordings]
+
+
+Processing MythtvController#getRecordings (for 127.0.0.1 at 2010-04-04 21:30:46) [GET]
+Completed in 219ms (View: 94, DB: 0) | 200 OK [http://localhost/mythtv/getRecordings]
+
+
+Processing MythtvController#getRecordings (for 127.0.0.1 at 2010-04-04 21:30:49) [GET]
+Completed in 234ms (View: 31, DB: 0) | 200 OK [http://localhost/mythtv/getRecordings]
+
+
+Processing MythtvController#getRecordings (for 127.0.0.1 at 2010-04-04 22:48:16) [GET]
+
+TypeError (can't convert String into Integer):
+  app/controllers/mythtv_controller.rb:58:in `[]'
+  app/controllers/mythtv_controller.rb:58:in `populateRecordings'
+  app/controllers/mythtv_controller.rb:9:in `getRecordings'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (203.1ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing MythtvController#getRecordings (for 127.0.0.1 at 2010-04-04 22:49:16) [GET]
+
+NoMethodError (undefined method `new' for nil:NilClass):
+  app/controllers/mythtv_controller.rb:63:in `populateRecordings'
+  app/controllers/mythtv_controller.rb:9:in `getRecordings'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (281.3ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing MythtvController#getRecordings (for 127.0.0.1 at 2010-04-04 22:51:34) [GET]
+
+ActiveRecord::StatementInvalid (Could not find table 'recordings'):
+  app/controllers/mythtv_controller.rb:63:in `new'
+  app/controllers/mythtv_controller.rb:63:in `populateRecordings'
+  app/controllers/mythtv_controller.rb:9:in `getRecordings'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (265.6ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing MythtvController#getRecordings (for 127.0.0.1 at 2010-04-04 22:53:42) [GET]
+
+NameError (undefined local variable or method `sererResponse' for #<MythtvController:0x3630ab0>):
+  app/controllers/mythtv_controller.rb:65:in `populateRecordings'
+  app/controllers/mythtv_controller.rb:9:in `getRecordings'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (187.5ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing MythtvController#getRecordings (for 127.0.0.1 at 2010-04-04 22:54:04) [GET]
+
+NoMethodError (You have a nil object when you didn't expect it!
+You might have expected an instance of ActiveRecord::Base.
+The error occurred while evaluating nil.[]=):
+  app/controllers/mythtv_controller.rb:67:in `populateRecordings'
+  app/controllers/mythtv_controller.rb:9:in `getRecordings'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (343.8ms)
+Rendered rescues/_request_and_response (15.6ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing MythtvController#getRecordings (for 127.0.0.1 at 2010-04-04 22:59:43) [GET]
+
+NoMethodError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.<<):
+  app/controllers/mythtv_controller.rb:68:in `populateRecordings'
+  app/controllers/mythtv_controller.rb:9:in `getRecordings'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (156.3ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing MythtvController#getRecordings (for 127.0.0.1 at 2010-04-04 23:00:30) [GET]
+
+
+Processing MythtvController#getRecordings (for 127.0.0.1 at 2010-04-04 23:13:49) [GET]
+Completed in 78ms (View: 16, DB: 0) | 200 OK [http://localhost/mythtv/getRecordings]
+
+
+Processing MythtvController#getRecordings (for 127.0.0.1 at 2010-04-04 23:17:11) [GET]
+
+NoMethodError (undefined method `title' for nil:NilClass):
+  app/controllers/mythtv_controller.rb:12:in `getRecordings'
+  app/controllers/mythtv_controller.rb:11:in `each'
+  app/controllers/mythtv_controller.rb:11:in `getRecordings'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (234.4ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
