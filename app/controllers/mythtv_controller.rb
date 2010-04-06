@@ -6,11 +6,7 @@ class MythtvController < ApplicationController
 
   def getRecordings
     executeCommand("QUERY_RECORDINGS Delete")
-    recordings = populateRecordings(getCommandResponse())
-
-    recordings.each do |recording|
-      puts recording.title
-    end
+    @recordings = populateRecordings(getCommandResponse())
   end
 
   private
@@ -59,7 +55,7 @@ class MythtvController < ApplicationController
   def populateRecordings(serverResponse)
     count = Integer(serverResponse[0])
 
-    recordings = Array.new(count)
+    recordings = Array.new
 
     recordingIndex = 0
     fieldIndex = 1
@@ -67,8 +63,9 @@ class MythtvController < ApplicationController
       recording = Recording.new
       recording.title = serverResponse[fieldIndex]
       recording.subtitle = serverResponse[fieldIndex + 1]
+      recording.description = serverResponse[fieldIndex + 2]
       fieldIndex = fieldIndex + 47
-      recordingIndex = recordingIndex + 1
+      recordingIndex += 1
       recordings << recording
     end
 

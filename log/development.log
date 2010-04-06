@@ -489,3 +489,49 @@ NoMethodError (undefined method `title' for nil:NilClass):
 Rendered rescues/_trace (234.4ms)
 Rendered rescues/_request_and_response (0.0ms)
 Rendering rescues/layout (internal_server_error)
+
+
+Processing MythtvController#getRecordings (for 127.0.0.1 at 2010-04-05 21:41:07) [GET]
+
+ActionView::MissingTemplate (Missing template mythtv/getRecordings.erb in view path app/views):
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing MythtvController#getRecordings (for 127.0.0.1 at 2010-04-05 21:42:32) [GET]
+Completed in 78ms (View: 0, DB: 0) | 200 OK [http://localhost/mythtv/getRecordings]
+
+
+Processing MythtvController#getRecordings (for 127.0.0.1 at 2010-04-05 21:57:49) [GET]
+Rendering mythtv/getRecordings
+Completed in 109ms (View: 16, DB: 0) | 200 OK [http://localhost/mythtv/getRecordings]
+
+
+Processing MythtvController#getRecordings (for 127.0.0.1 at 2010-04-05 21:58:00) [GET]
+Rendering mythtv/getRecordings
+Completed in 78ms (View: 16, DB: 0) | 200 OK [http://localhost/mythtv/getRecordings]
+
+
+Processing MythtvController#getRecordings (for 127.0.0.1 at 2010-04-05 21:58:54) [GET]
+Rendering mythtv/getRecordings
+Completed in 78ms (View: 16, DB: 0) | 200 OK [http://localhost/mythtv/getRecordings]
+
+
+Processing MythtvController#getRecordings (for 127.0.0.1 at 2010-04-05 22:00:58) [GET]
+Rendering mythtv/getRecordings
+Completed in 328ms (View: 63, DB: 0) | 200 OK [http://localhost/mythtv/getRecordings]
+
+
+Processing MythtvController#getRecordings (for 127.0.0.1 at 2010-04-05 22:07:45) [GET]
+Rendering mythtv/getRecordings
+Completed in 234ms (View: 31, DB: 0) | 200 OK [http://localhost/mythtv/getRecordings]
