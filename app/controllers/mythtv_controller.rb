@@ -1,17 +1,21 @@
 require 'socket'
 class MythtvController < ApplicationController
-  def initialize
-    connect()
-  end
-
   def getRecordings
+    connect()
     executeCommand("QUERY_RECORDINGS Delete")
     @recordings = populateRecordings(getCommandResponse())
+    @recordings = @recordings.sort_by {|r|r.title}
+    @recordings = @recordings.group_by { |recording| recording.title[0]}
+    disconnect()
   end
 
   private
 
   def connect()
+    if @isConnected
+      return
+    end
+
     @connection = TCPSocket::new("192.168.1.10", 6543)
     executeCommand("MYTH_PROTO_VERSION 50")
     getCommandResponse()
@@ -19,11 +23,15 @@ class MythtvController < ApplicationController
     executeCommand("ANN Playback MythTvOnRails 0")
     getCommandResponse()
 
-    isConnected = true
+    @isConnected = true
   end
 
   def disconnect()
-    @connection.close
+    if @isConnected
+      executeCommand("DONE")
+      @connection.close
+      @isConnected = false
+    end
   end
 
   def buildCommandString(command)
@@ -64,6 +72,8 @@ class MythtvController < ApplicationController
       recording.title = serverResponse[fieldIndex]
       recording.subtitle = serverResponse[fieldIndex + 1]
       recording.description = serverResponse[fieldIndex + 2]
+      recording.starttime = serverResponse[fieldIndex + 11]
+      recording.channame = serverResponse[fieldIndex + 7]
       fieldIndex = fieldIndex + 47
       recordingIndex += 1
       recordings << recording

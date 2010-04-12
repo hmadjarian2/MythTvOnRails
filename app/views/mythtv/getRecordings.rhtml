@@ -1,6 +1,25 @@
-<ul>
-<% @recordings.each do |r| %>
-<li><%= r.title %> - <%= r.subtitle %> - <%= r.description %></li>
-<% end %>
-</ul>
-
+<html>
+<head>
+  <title>MythTV Recordings</title>
+  <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;"/>
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <%= stylesheet_link_tag "iui" %>
+  <%= stylesheet_link_tag "default-theme" %>
+  <%= javascript_include_tag "iui" %>
+</head>
+<body>
+  <div class="toolbar">
+    <h1 id="pageTitle"></h1>
+    <a id="backButton" class="button" href="#"></a>
+    <a class="button" href="#searchForm">Search</a>
+  </div>
+  <ul id="recordings" title="Recordings" selected="true">
+    <% @recordings.each do |letter, recordings| %>
+    <li class="group"><%= letter.chr %></li>
+    <% for recording in recordings %>
+      <li><%= recording.title %> - <%= recording.subtitle %> - <%= recording.starttime %></li>
+    <% end %>
+    <% end %>
+  </ul>
+</body>
+</html> 
