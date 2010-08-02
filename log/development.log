@@ -2889,3 +2889,62 @@ ActionController::RoutingError (No route matches "/stylesheets/listArrowSel.png"
 
 Rendering rescues/layout (not_found)
 >>>>>>> d08567c61bda870c10daaf2951fa68c6dd14cb38
+
+
+Processing ApplicationController#getRecordings (for 127.0.0.1 at 2010-08-02 19:58:13) [GET]
+
+SyntaxError (/Users/harry/Sites/MythTvOnRails/app/controllers/mythtv_controller.rb:8: syntax error, unexpected tLSHFT, expecting kEND
+<<<<<<< HEAD
+  ^
+/Users/harry/Sites/MythTvOnRails/app/controllers/mythtv_controller.rb:16: syntax error, unexpected tEQQ, expecting kEND
+=======
+   ^
+/Users/harry/Sites/MythTvOnRails/app/controllers/mythtv_controller.rb:21: syntax error, unexpected tRSHFT, expecting kEND
+>>>>>>> d08567c61bda870c10daaf2951fa68c6dd14cb38
+  ^
+/Users/harry/Sites/MythTvOnRails/app/controllers/mythtv_controller.rb:85: syntax error, unexpected tLSHFT, expecting kEND
+<<<<<<< HEAD
+  ^
+/Users/harry/Sites/MythTvOnRails/app/controllers/mythtv_controller.rb:97: syntax error, unexpected tEQQ, expecting kEND
+=======
+   ^
+/Users/harry/Sites/MythTvOnRails/app/controllers/mythtv_controller.rb:103: syntax error, unexpected tRSHFT, expecting kEND
+>>>>>>> d08567c61bda870c10daaf2951fa68c6dd14cb38
+  ^):
+  
+
+Rendered rescues/_trace (81.9ms)
+Rendered rescues/_request_and_response (1.9ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ApplicationController#getRecordings (for 127.0.0.1 at 2010-08-02 19:58:14) [GET]
+
+SyntaxError (/Users/harry/Sites/MythTvOnRails/app/controllers/mythtv_controller.rb:8: syntax error, unexpected tLSHFT, expecting kEND
+<<<<<<< HEAD
+  ^
+/Users/harry/Sites/MythTvOnRails/app/controllers/mythtv_controller.rb:16: syntax error, unexpected tEQQ, expecting kEND
+=======
+   ^
+/Users/harry/Sites/MythTvOnRails/app/controllers/mythtv_controller.rb:21: syntax error, unexpected tRSHFT, expecting kEND
+>>>>>>> d08567c61bda870c10daaf2951fa68c6dd14cb38
+  ^
+/Users/harry/Sites/MythTvOnRails/app/controllers/mythtv_controller.rb:85: syntax error, unexpected tLSHFT, expecting kEND
+<<<<<<< HEAD
+  ^
+/Users/harry/Sites/MythTvOnRails/app/controllers/mythtv_controller.rb:97: syntax error, unexpected tEQQ, expecting kEND
+=======
+   ^
+/Users/harry/Sites/MythTvOnRails/app/controllers/mythtv_controller.rb:103: syntax error, unexpected tRSHFT, expecting kEND
+>>>>>>> d08567c61bda870c10daaf2951fa68c6dd14cb38
+  ^):
+  
+
+Rendered rescues/_trace (35.7ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing MythtvController#getRecordings (for 127.0.0.1 at 2010-08-02 19:58:24) [GET]
+Rendering mythtv/getRecordings
+Completed in 88ms (View: 8, DB: 0) | 200 OK [http://localhost/mythtv/getRecordings]

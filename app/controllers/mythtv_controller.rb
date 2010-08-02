@@ -2,10 +2,13 @@ require 'socket'
 require 'ProgramInfoFields'
 
 class MythtvController < ApplicationController
+  def initialize
+    connect()
+  end
+
   def getRecordings
     connect()
     executeCommand("QUERY_RECORDINGS Delete")
-<<<<<<< HEAD
     @recordings = populateRecordings(getCommandResponse(), 0)
   end
 
@@ -13,12 +16,6 @@ class MythtvController < ApplicationController
     executeCommand("QUERY_GETALLPENDING")
     @recordings = populateRecordings(getCommandResponse(), 1)
     #@response = getCommandResponse()
-=======
-    @recordings = populateRecordings(getCommandResponse())
-    @recordings = @recordings.sort_by {|r|r.title}
-    @recordings = @recordings.group_by { |recording| recording.title[0]}
-    disconnect()
->>>>>>> d08567c61bda870c10daaf2951fa68c6dd14cb38
   end
 
   private
@@ -82,7 +79,6 @@ class MythtvController < ApplicationController
     fieldIndex = recordCountIndex + 1
     while recordingIndex < count:
       recording = Recording.new
-<<<<<<< HEAD
       recording.title = serverResponse[fieldIndex + ProgramInfoFields::TITLE]
       recording.subtitle = serverResponse[fieldIndex + ProgramInfoFields::SUBTITLE]
       recording.description = serverResponse[fieldIndex + ProgramInfoFields::DESCRIPTION]
@@ -94,13 +90,6 @@ class MythtvController < ApplicationController
       recording.starttime = Time.at(Integer(serverResponse[fieldIndex + ProgramInfoFields::STARTTIME]))
       recording.endtime = Time.at(Integer(serverResponse[fieldIndex + ProgramInfoFields::ENDTIME]))
       recording.playgroup = serverResponse[fieldIndex + 30]
-=======
-      recording.title = serverResponse[fieldIndex]
-      recording.subtitle = serverResponse[fieldIndex + 1]
-      recording.description = serverResponse[fieldIndex + 2]
-      recording.starttime = serverResponse[fieldIndex + 11]
-      recording.channame = serverResponse[fieldIndex + 7]
->>>>>>> d08567c61bda870c10daaf2951fa68c6dd14cb38
       fieldIndex = fieldIndex + 47
       recordingIndex += 1
       recordings << recording
