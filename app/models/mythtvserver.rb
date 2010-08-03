@@ -1,35 +1,23 @@
 require 'socket'
+require 'MythTvCommands'
 require 'ProgramInfoFields'
-require 'MythtvServer'
 
-class MythtvController < ApplicationController
-  def initialize
-    @mythServer = MythTvServer.new("192.168.1.10")
-    @mythServer.connect()
+class MythTvServer
+  def initialize(server, port=6543)
+    @server = server
+    @port = port
   end
-
-  def getRecordings
-    @mythServer.executeCommand("QUERY_RECORDINGS Delete")
-    @recordings = @mythServer.populateRecordings(getCommandResponse(), 0)
-  end
-
-  def getScheduledRecordings
-    executeCommand("QUERY_GETALLPENDING")
-    @recordings = populateRecordings(getCommandResponse(), 1)
-  end
-
-  private
 
   def connect()
     if @isConnected
       return
     end
 
-    @connection = TCPSocket::new("192.168.1.10", 6543)
-    executeCommand("MYTH_PROTO_VERSION 50")
+    @connection = TCPSocket::new(@server, @port)
+    executeCommand(MythTvCommands::MYTH_PROTO_VERSION + " 50")
     getCommandResponse()
 
-    executeCommand("ANN Playback MythTvOnRails 0")
+    executeCommand(MythTvCommands::ANN_PLAYBACK + " MythTvOnRails 0")
     getCommandResponse()
 
     @isConnected = true
@@ -37,7 +25,7 @@ class MythtvController < ApplicationController
 
   def disconnect()
     if @isConnected
-      executeCommand("DONE")
+      executeCommand(MythTvCommands::DONE)
       @connection.close
       @isConnected = false
     end
