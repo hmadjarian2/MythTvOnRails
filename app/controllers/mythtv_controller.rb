@@ -1,13 +1,22 @@
 require 'socket'
+require 'ProgramInfoFields'
+
 class MythtvController < ApplicationController
+  def initialize
+    connect()
+  end
+
   def getRecordings
     #this is a test
     connect()
     executeCommand("QUERY_RECORDINGS Delete")
-    @recordings = populateRecordings(getCommandResponse())
-    @recordings = @recordings.sort_by {|r|r.title}
-    @recordings = @recordings.group_by { |recording| recording.title[0]}
-    disconnect()
+    @recordings = populateRecordings(getCommandResponse(), 0)
+  end
+
+  def getScheduledRecordings
+    executeCommand("QUERY_GETALLPENDING")
+    @recordings = populateRecordings(getCommandResponse(), 1)
+    #@response = getCommandResponse()
   end
 
   private
@@ -61,20 +70,27 @@ class MythtvController < ApplicationController
     return responseText.split("[]:[]")
   end
 
-  def populateRecordings(serverResponse)
-    count = Integer(serverResponse[0])
+  def populateRecordings(serverResponse, recordCountIndex)
+    @response = serverResponse
+    count = Integer(serverResponse[recordCountIndex])
 
     recordings = Array.new
 
     recordingIndex = 0
-    fieldIndex = 1
+    fieldIndex = recordCountIndex + 1
     while recordingIndex < count:
       recording = Recording.new
-      recording.title = serverResponse[fieldIndex]
-      recording.subtitle = serverResponse[fieldIndex + 1]
-      recording.description = serverResponse[fieldIndex + 2]
-      recording.starttime = serverResponse[fieldIndex + 11]
-      recording.channame = serverResponse[fieldIndex + 7]
+      recording.title = serverResponse[fieldIndex + ProgramInfoFields::TITLE]
+      recording.subtitle = serverResponse[fieldIndex + ProgramInfoFields::SUBTITLE]
+      recording.description = serverResponse[fieldIndex + ProgramInfoFields::DESCRIPTION]
+      recording.category = serverResponse[fieldIndex + ProgramInfoFields::CATEGORY]
+      recording.chanid = serverResponse[fieldIndex + ProgramInfoFields::CHANID]
+      recording.channum = serverResponse[fieldIndex + ProgramInfoFields::CHANNUM]
+      recording.callsign = serverResponse[fieldIndex + ProgramInfoFields::CALLSIGN]
+      recording.channame = serverResponse[fieldIndex + ProgramInfoFields::CHANNAME]
+      recording.starttime = Time.at(Integer(serverResponse[fieldIndex + ProgramInfoFields::STARTTIME]))
+      recording.endtime = Time.at(Integer(serverResponse[fieldIndex + ProgramInfoFields::ENDTIME]))
+      recording.playgroup = serverResponse[fieldIndex + 30]
       fieldIndex = fieldIndex + 47
       recordingIndex += 1
       recordings << recording

@@ -7,6 +7,37 @@ class Recording
   attr_accessor :channum
   attr_accessor :callsign
   attr_accessor :channame
+  attr_accessor :filename
+  attr_accessor :filesize
   attr_accessor :starttime
-  attr_accessor :enttime
+  attr_accessor :endtime
+  attr_accessor :findid
+  attr_accessor :hostname
+  attr_accessor :sourceid
+  attr_accessor :cardid
+  attr_accessor :inputid
+  attr_accessor :recpriority
+  attr_accessor :recstatus
+  attr_accessor :recordid
+  attr_accessor :rectype
+  attr_accessor :dupin
+  attr_accessor :dupmethod
+  attr_accessor :recstartts
+  attr_accessor :recendts
+  attr_accessor :programflags
+  attr_accessor :recgroup
+  attr_accessor :outputfilters
+  attr_accessor :seriesid
+  attr_accessor :programid
+  attr_accessor :lastmodified
+  attr_accessor :stars
+  attr_accessor :airdate
+  attr_accessor :playgroup
+  attr_accessor :recpriority2
+  attr_accessor :parentid
+  attr_accessor :storagegroup
+  attr_accessor :audio_props
+  attr_accessor :video_props
+  attr_accessor :subtitle_type
+  attr_accessor :year
 end

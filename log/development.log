@@ -537,6 +537,709 @@ Rendering mythtv/getRecordings
 Completed in 234ms (View: 31, DB: 0) | 200 OK [http://localhost/mythtv/getRecordings]
 
 
+<<<<<<< HEAD
+Processing ApplicationController#index (for 127.0.0.1 at 2010-07-29 22:45:40) [GET]
+
+ActionController::RoutingError (No route matches "/recordings" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-07-29 22:45:45) [GET]
+
+ActionController::RoutingError (No route matches "/getrecordings" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-07-29 22:45:50) [GET]
+
+ActionController::RoutingError (No route matches "/getRecordings" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing MythtvController#index (for 127.0.0.1 at 2010-07-29 22:46:07) [GET]
+
+ActionController::UnknownAction (No action responded to index. Actions: getRecordings):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing MythtvController#getRecordings (for 127.0.0.1 at 2010-07-29 22:46:28) [GET]
+Rendering mythtv/getRecordings
+Completed in 82ms (View: 6, DB: 0) | 200 OK [http://localhost/mythtv/getRecordings]
+
+
+Processing MythtvController#getRecordings (for 127.0.0.1 at 2010-07-29 22:57:16) [GET]
+Rendering mythtv/getRecordings
+Completed in 28ms (View: 7, DB: 0) | 200 OK [http://localhost/mythtv/getRecordings]
+
+
+Processing MythtvController#getRecordings (for 127.0.0.1 at 2010-07-29 22:59:45) [GET]
+Rendering mythtv/getRecordings
+Completed in 28ms (View: 7, DB: 0) | 200 OK [http://localhost/mythtv/getRecordings]
+
+
+Processing MythtvController#getRecordings (for 127.0.0.1 at 2010-07-29 22:59:48) [GET]
+Rendering mythtv/getRecordings
+Completed in 22ms (View: 1, DB: 0) | 200 OK [http://localhost/mythtv/getRecordings]
+
+
+Processing MythtvController#getRecordings (for 127.0.0.1 at 2010-07-29 22:59:49) [GET]
+Rendering mythtv/getRecordings
+Completed in 22ms (View: 1, DB: 0) | 200 OK [http://localhost/mythtv/getRecordings]
+
+
+Processing MythtvController#getRecordings (for 127.0.0.1 at 2010-07-29 23:02:06) [GET]
+Rendering mythtv/getRecordings
+Completed in 28ms (View: 7, DB: 0) | 200 OK [http://localhost/mythtv/getRecordings]
+
+
+Processing MythtvController#getRecordings (for 127.0.0.1 at 2010-07-29 23:06:18) [GET]
+
+NoMethodError (undefined method `endtime=' for #<Recording:0x1a151fc>):
+  app/controllers/mythtv_controller.rb:72:in `populateRecordings'
+  app/controllers/mythtv_controller.rb:9:in `getRecordings'
+
+Rendered rescues/_trace (40.0ms)
+Rendered rescues/_request_and_response (52.1ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing MythtvController#getRecordings (for 127.0.0.1 at 2010-07-29 23:06:39) [GET]
+Rendering mythtv/getRecordings
+Completed in 27ms (View: 7, DB: 0) | 200 OK [http://localhost/mythtv/getRecordings]
+
+
+Processing MythtvController#getRecordings (for 127.0.0.1 at 2010-07-29 23:07:26) [GET]
+Rendering mythtv/getRecordings
+Completed in 22ms (View: 2, DB: 0) | 200 OK [http://localhost/mythtv/getRecordings]
+
+
+Processing MythtvController#getRecordings (for 127.0.0.1 at 2010-07-30 08:04:00) [GET]
+Rendering mythtv/getRecordings
+Completed in 80ms (View: 2, DB: 0) | 200 OK [http://localhost/mythtv/getRecordings]
+
+
+Processing MythtvController#getRecordings (for 127.0.0.1 at 2010-07-30 08:04:34) [GET]
+Rendering mythtv/getRecordings
+Completed in 22ms (View: 2, DB: 0) | 200 OK [http://localhost/mythtv/getRecordings]
+
+
+Processing MythtvController#getRecordings (for 127.0.0.1 at 2010-07-30 08:04:45) [GET]
+Rendering mythtv/getRecordings
+Completed in 22ms (View: 2, DB: 0) | 200 OK [http://localhost/mythtv/getRecordings]
+
+
+Processing MythtvController#getRecordings (for 127.0.0.1 at 2010-07-30 08:05:52) [GET]
+Rendering mythtv/getRecordings
+Completed in 22ms (View: 2, DB: 0) | 200 OK [http://localhost/mythtv/getRecordings]
+
+
+Processing MythtvController#getRecordings (for 127.0.0.1 at 2010-07-30 08:09:16) [GET]
+Rendering mythtv/getRecordings
+Completed in 28ms (View: 7, DB: 0) | 200 OK [http://localhost/mythtv/getRecordings]
+
+
+Processing MythtvController#getRecordings (for 127.0.0.1 at 2010-07-30 08:10:21) [GET]
+Rendering mythtv/getRecordings
+Completed in 28ms (View: 7, DB: 0) | 200 OK [http://localhost/mythtv/getRecordings]
+
+
+Processing MythtvController#getRecordings (for 127.0.0.1 at 2010-07-30 08:12:12) [GET]
+Rendering mythtv/getRecordings
+Completed in 28ms (View: 7, DB: 0) | 200 OK [http://localhost/mythtv/getRecordings]
+
+
+Processing MythtvController#getRecordings (for 127.0.0.1 at 2010-07-30 08:12:59) [GET]
+Rendering mythtv/getRecordings
+Completed in 80ms (View: 7, DB: 0) | 200 OK [http://localhost/mythtv/getRecordings]
+
+
+Processing MythtvController#getRecordings (for 127.0.0.1 at 2010-07-30 08:30:18) [GET]
+Rendering mythtv/getRecordings
+
+ActionView::TemplateError (undefined method `jd' for #<ActionView::Base:0x1a8a768>) on line #6 of app/views/mythtv/getRecordings.rhtml:
+3:   <li><%= r.title %> - <%= r.subtitle %> - <%= r.description %> - <%= r.category %> - <%= r.channum %> - <%= r.callsign %> - <%= r.channame %> - <%= r.starttime %> - <%= r.endtime %></li>
+4: <% end %>
+5: </ul>
+6: <%= jd(@recordings[0].starttime) %>
+
+    app/views/mythtv/getRecordings.rhtml:6:in `_run_rhtml_app47views47mythtv47getRecordings46rhtml'
+
+Rendered rescues/_trace (46.4ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing MythtvController#getRecordings (for 127.0.0.1 at 2010-07-30 08:31:04) [GET]
+Rendering mythtv/getRecordings
+
+ActionView::TemplateError (undefined method `jd' for #<ActionView::Base:0x8f764>) on line #6 of app/views/mythtv/getRecordings.rhtml:
+3:   <li><%= r.title %> - <%= r.subtitle %> - <%= r.description %> - <%= r.category %> - <%= r.channum %> - <%= r.callsign %> - <%= r.channame %> - <%= r.starttime %> - <%= r.endtime %></li>
+4: <% end %>
+5: </ul>
+6: <%= jd(@recordings[0].starttime, "GREGORIAN") %>
+
+    app/views/mythtv/getRecordings.rhtml:6:in `_run_rhtml_app47views47mythtv47getRecordings46rhtml'
+
+Rendered rescues/_trace (46.4ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing MythtvController#getRecordings (for 127.0.0.1 at 2010-07-30 08:31:05) [GET]
+Rendering mythtv/getRecordings
+
+ActionView::TemplateError (undefined method `jd' for #<ActionView::Base:0x25611f0>) on line #6 of app/views/mythtv/getRecordings.rhtml:
+3:   <li><%= r.title %> - <%= r.subtitle %> - <%= r.description %> - <%= r.category %> - <%= r.channum %> - <%= r.callsign %> - <%= r.channame %> - <%= r.starttime %> - <%= r.endtime %></li>
+4: <% end %>
+5: </ul>
+6: <%= jd(@recordings[0].starttime, "GREGORIAN") %>
+
+    app/views/mythtv/getRecordings.rhtml:6:in `_run_rhtml_app47views47mythtv47getRecordings46rhtml'
+
+Rendered rescues/_trace (127.4ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing MythtvController#getRecordings (for 127.0.0.1 at 2010-07-30 19:00:23) [GET]
+Rendering mythtv/getRecordings
+
+ActionView::TemplateError (can't convert String into time) on line #6 of app/views/mythtv/getRecordings.rhtml:
+3:   <li><%= r.title %> - <%= r.subtitle %> - <%= r.description %> - <%= r.category %> - <%= r.channum %> - <%= r.callsign %> - <%= r.channame %> - <%= r.starttime %> - <%= r.endtime %></li>
+4: <% end %>
+5: </ul>
+6: <%= Time.at(@recordings[0].starttime) %>
+
+    app/views/mythtv/getRecordings.rhtml:6:in `at'
+    app/views/mythtv/getRecordings.rhtml:6:in `_run_rhtml_app47views47mythtv47getRecordings46rhtml'
+
+Rendered rescues/_trace (46.5ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing MythtvController#getRecordings (for 127.0.0.1 at 2010-07-30 22:17:56) [GET]
+Rendering mythtv/getRecordings
+Completed in 35ms (View: 7, DB: 0) | 200 OK [http://localhost/mythtv/getRecordings]
+
+
+Processing MythtvController#getRecordings (for 127.0.0.1 at 2010-07-30 22:20:15) [GET]
+Rendering mythtv/getRecordings
+
+ActionView::TemplateError (can't convert String into time) on line #6 of app/views/mythtv/getRecordings.rhtml:
+3:   <li><%= r.title %> - <%= r.subtitle %> - <%= r.description %> - <%= r.category %> - <%= r.channum %> - <%= r.callsign %> - <%= r.channame %> - <%= r.starttime %> - <%= r.endtime %></li>
+4: <% end %>
+5: </ul>
+6: <%= Time.at(@recordings[0].starttime) %>
+
+    app/views/mythtv/getRecordings.rhtml:6:in `at'
+    app/views/mythtv/getRecordings.rhtml:6:in `_run_rhtml_app47views47mythtv47getRecordings46rhtml'
+
+Rendered rescues/_trace (147.6ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing MythtvController#getRecordings (for 127.0.0.1 at 2010-07-30 22:21:01) [GET]
+Rendering mythtv/getRecordings
+Completed in 32ms (View: 9, DB: 0) | 200 OK [http://localhost/mythtv/getRecordings]
+
+
+Processing MythtvController#getRecordings (for 127.0.0.1 at 2010-07-30 23:04:13) [GET]
+Rendering mythtv/getRecordings
+
+ActionView::TemplateError (allocator undefined for Bignum) on line #6 of app/views/mythtv/getRecordings.rhtml:
+3:   <li><%= r.title %> - <%= r.subtitle %> - <%= r.description %> - <%= r.category %> - <%= r.channum %> - <%= r.callsign %> - <%= r.channame %> - <%= r.starttime %> - <%= r.endtime %></li>
+4: <% end %>
+5: </ul>
+6: <%= Date.parse(Integer(@recordings[0].starttime)) %>
+
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/date/format.rb:959:in `dup'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/date/format.rb:959:in `_parse'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/date.rb:974:in `parse'
+    app/views/mythtv/getRecordings.rhtml:6:in `_run_rhtml_app47views47mythtv47getRecordings46rhtml'
+
+Rendered rescues/_trace (47.9ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing MythtvController#getRecordings (for 127.0.0.1 at 2010-07-30 23:04:30) [GET]
+Rendering mythtv/getRecordings
+
+ActionView::TemplateError (invalid date) on line #6 of app/views/mythtv/getRecordings.rhtml:
+3:   <li><%= r.title %> - <%= r.subtitle %> - <%= r.description %> - <%= r.category %> - <%= r.channum %> - <%= r.callsign %> - <%= r.channame %> - <%= r.starttime %> - <%= r.endtime %></li>
+4: <% end %>
+5: </ul>
+6: <%= Date.parse(@recordings[0].starttime) %>
+
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/date.rb:931:in `new_by_frags'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/date.rb:975:in `parse'
+    app/views/mythtv/getRecordings.rhtml:6:in `_run_rhtml_app47views47mythtv47getRecordings46rhtml'
+
+Rendered rescues/_trace (126.7ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing MythtvController#getRecordings (for 127.0.0.1 at 2010-07-30 23:05:51) [GET]
+Rendering mythtv/getRecordings
+Completed in 28ms (View: 7, DB: 0) | 200 OK [http://localhost/mythtv/getRecordings]
+
+
+Processing MythtvController#getRecordings (for 127.0.0.1 at 2010-07-30 23:08:24) [GET]
+
+TypeError (can't convert String into time):
+  app/controllers/mythtv_controller.rb:72:in `at'
+  app/controllers/mythtv_controller.rb:72:in `populateRecordings'
+  app/controllers/mythtv_controller.rb:9:in `getRecordings'
+
+Rendered rescues/_trace (38.4ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing MythtvController#getRecordings (for 127.0.0.1 at 2010-07-30 23:08:44) [GET]
+Rendering mythtv/getRecordings
+Completed in 22ms (View: 2, DB: 0) | 200 OK [http://localhost/mythtv/getRecordings]
+
+
+Processing MythtvController#getRecordings (for 127.0.0.1 at 2010-07-30 23:10:07) [GET]
+Rendering mythtv/getRecordings
+Completed in 22ms (View: 2, DB: 0) | 200 OK [http://localhost/mythtv/getRecordings]
+
+
+Processing MythtvController#getRecordings (for 127.0.0.1 at 2010-07-30 23:11:00) [GET]
+Rendering mythtv/getRecordings
+Completed in 22ms (View: 2, DB: 0) | 200 OK [http://localhost/mythtv/getRecordings]
+
+
+Processing MythtvController#getRecordings (for 127.0.0.1 at 2010-07-30 23:12:11) [GET]
+Rendering mythtv/getRecordings
+Completed in 27ms (View: 7, DB: 0) | 200 OK [http://localhost/mythtv/getRecordings]
+
+
+Processing MythtvController#getRecordings (for 127.0.0.1 at 2010-07-30 23:19:42) [GET]
+Rendering mythtv/getRecordings
+Completed in 27ms (View: 7, DB: 0) | 200 OK [http://localhost/mythtv/getRecordings]
+
+
+Processing MythtvController#getRecordings (for 127.0.0.1 at 2010-07-30 23:19:44) [GET]
+Rendering mythtv/getRecordings
+Completed in 100ms (View: 2, DB: 0) | 200 OK [http://localhost/mythtv/getRecordings]
+
+
+Processing MythtvController#getRecordings (for 127.0.0.1 at 2010-07-30 23:23:02) [GET]
+Rendering mythtv/getRecordings
+Completed in 28ms (View: 7, DB: 0) | 200 OK [http://localhost/mythtv/getRecordings]
+
+
+Processing MythtvController#getScheduledRecordings (for 127.0.0.1 at 2010-07-31 23:09:49) [GET]
+Rendering mythtv/getScheduledRecordings
+Completed in 154ms (View: 9, DB: 0) | 200 OK [http://localhost/mythtv/getScheduledRecordings]
+
+
+Processing MythtvController#getScheduledRecordings (for 127.0.0.1 at 2010-07-31 23:18:24) [GET]
+Rendering mythtv/getScheduledRecordings
+Completed in 37ms (View: 1, DB: 0) | 200 OK [http://localhost/mythtv/getScheduledRecordings]
+
+
+Processing MythtvController#getScheduledRecordings (for 127.0.0.1 at 2010-07-31 23:24:38) [GET]
+Rendering mythtv/getScheduledRecordings
+Completed in 84ms (View: 7, DB: 0) | 200 OK [http://localhost/mythtv/getScheduledRecordings]
+
+
+Processing MythtvController#getScheduledRecordings (for 127.0.0.1 at 2010-07-31 23:25:01) [GET]
+Rendering mythtv/getScheduledRecordings
+ERROR: compiling _run_rhtml_app47views47mythtv47getScheduledRecordings46rhtml RAISED compile error
+/Users/harry/Sites/MythTvOnRails/app/views/mythtv/getScheduledRecordings.rhtml:1: syntax error, unexpected ';', expecting ')'
+...response.join("[]:[]" ).to_s); @output_buffer.concat "\n"
+                              ^
+Function body:           def _run_rhtml_app47views47mythtv47getScheduledRecordings46rhtml(local_assigns)
+            old_output_buffer = output_buffer;;@output_buffer = '';  __in_erb_template=true ; @output_buffer.concat(( @response.join("[]:[]" ).to_s); @output_buffer.concat "\n"
+@output_buffer
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: /Users/harry/Sites/MythTvOnRails/app/views/mythtv/getScheduledRecordings.rhtml:5:in `compile!'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable.rb:61:in `compile'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable.rb:28:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_view/template.rb:205:in `render_template'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_view/base.rb:265:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:1250:in `render_for_file'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:945:in `render_without_benchmark'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:51:in `render'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:10:in `realtime'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:51:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:1326:in `default_render'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:1332:in `perform_action_without_filters'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/filters.rb:617:in `call_filters'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:10:in `realtime'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/flash.rb:146:in `perform_action'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:532:in `send'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:532:in `process_without_filters'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/filters.rb:606:in `process'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:391:in `process'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:386:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/routing/route_set.rb:437:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:87:in `dispatch'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:121:in `_call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:130:in `build_middleware_stack'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:29:in `call'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:29:in `call'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:9:in `cache'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:28:in `call'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/string_coercion.rb:25:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/head.rb:9:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/methodoverride.rb:24:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/params_parser.rb:15:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/session/cookie_store.rb:93:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/failsafe.rb:26:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `synchronize'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:114:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/reloader.rb:34:in `run'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:108:in `call'
+/Library/Ruby/Gems/1.8/gems/rails-2.3.5/lib/rails/rack/static.rb:31:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:46:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `each'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `call'
+/Library/Ruby/Gems/1.8/gems/rails-2.3.5/lib/rails/rack/log_tailer.rb:17:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/content_length.rb:13:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/chunked.rb:15:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/handler/mongrel.rb:64:in `process'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/handler/mongrel.rb:34:in `run'
+/Library/Ruby/Gems/1.8/gems/rails-2.3.5/lib/commands/server.rb:111
+/Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+/Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `require'
+script/server:3
+
+ActionView::TemplateError (compile error
+/Users/harry/Sites/MythTvOnRails/app/views/mythtv/getScheduledRecordings.rhtml:1: syntax error, unexpected ';', expecting ')'
+...response.join("[]:[]" ).to_s); @output_buffer.concat "\n"
+                              ^) on line #1 of app/views/mythtv/getScheduledRecordings.rhtml:
+1: <%= @response.join("[]:[]" %>
+
+    app/views/mythtv/getScheduledRecordings.rhtml:5:in `compile!'
+
+Rendered rescues/_trace (98.2ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing MythtvController#getScheduledRecordings (for 127.0.0.1 at 2010-07-31 23:25:18) [GET]
+Rendering mythtv/getScheduledRecordings
+Completed in 43ms (View: 8, DB: 0) | 200 OK [http://localhost/mythtv/getScheduledRecordings]
+
+
+Processing MythtvController#getScheduledRecordings (for 127.0.0.1 at 2010-08-01 20:40:11) [GET]
+Rendering mythtv/getScheduledRecordings
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.join) on line #1 of app/views/mythtv/getScheduledRecordings.rhtml:
+1: <%= @response.join("[]:[]") %>
+
+    app/views/mythtv/getScheduledRecordings.rhtml:1:in `_run_rhtml_app47views47mythtv47getScheduledRecordings46rhtml'
+
+Rendered rescues/_trace (45.5ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing MythtvController#getScheduledRecordings (for 127.0.0.1 at 2010-08-01 20:40:30) [GET]
+Rendering mythtv/getScheduledRecordings
+Completed in 125ms (View: 16, DB: 0) | 200 OK [http://localhost/mythtv/getScheduledRecordings]
+
+
+Processing MythtvController#getRecordings (for 127.0.0.1 at 2010-08-01 20:40:53) [GET]
+Rendering mythtv/getRecordings
+Completed in 149ms (View: 3, DB: 0) | 200 OK [http://localhost/mythtv/getRecordings]
+
+
+Processing MythtvController#getRecordings (for 127.0.0.1 at 2010-08-02 15:41:05) [GET]
+
+NameError (uninitialized constant MythtvController::ProgramInfoFields):
+  app/controllers/mythtv_controller.rb:70:in `populateRecordings'
+  app/controllers/mythtv_controller.rb:9:in `getRecordings'
+
+Rendered rescues/_trace (38.1ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing MythtvController#getRecordings (for 127.0.0.1 at 2010-08-02 15:41:34) [GET]
+
+NoMethodError (undefined method `playbackgroup=' for #<Recording:0x24da59c>):
+  app/controllers/mythtv_controller.rb:82:in `populateRecordings'
+  app/controllers/mythtv_controller.rb:11:in `getRecordings'
+
+Rendered rescues/_trace (39.6ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing MythtvController#getRecordings (for 127.0.0.1 at 2010-08-02 15:42:13) [GET]
+Rendering mythtv/getRecordings
+
+ActionView::TemplateError (undefined method `playbackgroup' for #<Recording:0x2413af0>) on line #3 of app/views/mythtv/getRecordings.rhtml:
+1: <ul>
+2: <% @recordings.each do |r| %>
+3:   <li><%= r.title %> - <%= r.subtitle %> - <%= r.description %> - <%= r.category %> - <%= r.channum %> - <%= r.callsign %> - <%= r.channame %> - <%= r.starttime %> - <%= r.endtime %> - <%= r.playbackgroup %></li>
+4: <% end %>
+5: </ul>
+
+    app/views/mythtv/getRecordings.rhtml:3:in `_run_rhtml_app47views47mythtv47getRecordings46rhtml'
+    app/views/mythtv/getRecordings.rhtml:2:in `each'
+    app/views/mythtv/getRecordings.rhtml:2:in `_run_rhtml_app47views47mythtv47getRecordings46rhtml'
+
+Rendered rescues/_trace (46.9ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing MythtvController#getRecordings (for 127.0.0.1 at 2010-08-02 15:42:47) [GET]
+Rendering mythtv/getRecordings
+Completed in 34ms (View: 8, DB: 0) | 200 OK [http://localhost/mythtv/getRecordings]
+
+
+Processing MythtvController#getRecordings (for 127.0.0.1 at 2010-08-02 15:43:40) [GET]
+Rendering mythtv/getRecordings
+Completed in 28ms (View: 2, DB: 0) | 200 OK [http://localhost/mythtv/getRecordings]
+
+
+Processing MythtvController#getRecordings (for 127.0.0.1 at 2010-08-02 15:45:58) [GET]
+Rendering mythtv/getRecordings
+Completed in 28ms (View: 2, DB: 0) | 200 OK [http://localhost/mythtv/getRecordings]
+
+
+Processing MythtvController#getRecordings (for 127.0.0.1 at 2010-08-02 15:50:06) [GET]
+Rendering mythtv/getRecordings
+Completed in 29ms (View: 2, DB: 0) | 200 OK [http://localhost/mythtv/getRecordings]
+
+
+Processing MythtvController#getRecordings (for 127.0.0.1 at 2010-08-02 15:50:07) [GET]
+Rendering mythtv/getRecordings
+Completed in 28ms (View: 2, DB: 0) | 200 OK [http://localhost/mythtv/getRecordings]
+
+
+Processing MythtvController#getRecordings (for 127.0.0.1 at 2010-08-02 15:50:16) [GET]
+Rendering mythtv/getRecordings
+Completed in 29ms (View: 2, DB: 0) | 200 OK [http://localhost/mythtv/getRecordings]
+
+
+Processing MythtvController#getRecordings (for 127.0.0.1 at 2010-08-02 15:50:17) [GET]
+Rendering mythtv/getRecordings
+Completed in 27ms (View: 2, DB: 0) | 200 OK [http://localhost/mythtv/getRecordings]
+
+
+Processing MythtvController#getRecordings (for 127.0.0.1 at 2010-08-02 15:50:17) [GET]
+Rendering mythtv/getRecordings
+Completed in 101ms (View: 2, DB: 0) | 200 OK [http://localhost/mythtv/getRecordings]
+
+
+Processing MythtvController#getRecordings (for 127.0.0.1 at 2010-08-02 15:50:17) [GET]
+Rendering mythtv/getRecordings
+Completed in 28ms (View: 2, DB: 0) | 200 OK [http://localhost/mythtv/getRecordings]
+
+
+Processing MythtvController#getRecordings (for 127.0.0.1 at 2010-08-02 15:51:06) [GET]
+Rendering mythtv/getRecordings
+Completed in 34ms (View: 8, DB: 0) | 200 OK [http://localhost/mythtv/getRecordings]
+
+
+Processing MythtvController#getRecordings (for 127.0.0.1 at 2010-08-02 15:51:21) [GET]
+Rendering mythtv/getRecordings
+Completed in 28ms (View: 2, DB: 0) | 200 OK [http://localhost/mythtv/getRecordings]
+
+
+Processing MythtvController#getRecordings (for 127.0.0.1 at 2010-08-02 15:52:08) [GET]
+
+NameError (uninitialized constant MythtvController::STARTTIME):
+  app/controllers/mythtv_controller.rb:80:in `populateRecordings'
+  app/controllers/mythtv_controller.rb:11:in `getRecordings'
+
+Rendered rescues/_trace (38.7ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing MythtvController#getRecordings (for 127.0.0.1 at 2010-08-02 15:52:57) [GET]
+
+NameError (uninitialized constant MythtvController::STARTTIME):
+  app/controllers/mythtv_controller.rb:80:in `populateRecordings'
+  app/controllers/mythtv_controller.rb:11:in `getRecordings'
+
+Rendered rescues/_trace (38.9ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing MythtvController#getRecordings (for 127.0.0.1 at 2010-08-02 15:52:58) [GET]
+
+NameError (uninitialized constant MythtvController::STARTTIME):
+  app/controllers/mythtv_controller.rb:80:in `populateRecordings'
+  app/controllers/mythtv_controller.rb:11:in `getRecordings'
+
+Rendered rescues/_trace (38.9ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing MythtvController#getRecordings (for 127.0.0.1 at 2010-08-02 15:53:26) [GET]
+
+NameError (uninitialized constant MythtvController::ENDTIME):
+  app/controllers/mythtv_controller.rb:81:in `populateRecordings'
+  app/controllers/mythtv_controller.rb:11:in `getRecordings'
+
+Rendered rescues/_trace (38.3ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing MythtvController#getRecordings (for 127.0.0.1 at 2010-08-02 15:53:33) [GET]
+Rendering mythtv/getRecordings
+Completed in 28ms (View: 2, DB: 0) | 200 OK [http://localhost/mythtv/getRecordings]
+
+
+Processing MythtvController#getRecordings (for 127.0.0.1 at 2010-08-02 15:54:12) [GET]
+Rendering mythtv/getRecordings
+Completed in 33ms (View: 8, DB: 0) | 200 OK [http://localhost/mythtv/getRecordings]
+
+
+Processing MythtvController#getRecordings (for 127.0.0.1 at 2010-08-02 15:56:27) [GET]
+Rendering mythtv/getRecordings
+Completed in 28ms (View: 2, DB: 0) | 200 OK [http://localhost/mythtv/getRecordings]
+
+
+Processing MythtvController#getRecordings (for 127.0.0.1 at 2010-08-02 15:56:28) [GET]
+Rendering mythtv/getRecordings
+Completed in 28ms (View: 2, DB: 0) | 200 OK [http://localhost/mythtv/getRecordings]
+
+
+Processing MythtvController#getRecordings (for 127.0.0.1 at 2010-08-02 15:56:28) [GET]
+Rendering mythtv/getRecordings
+Completed in 27ms (View: 2, DB: 0) | 200 OK [http://localhost/mythtv/getRecordings]
+
+
+Processing MythtvController#getRecordings (for 127.0.0.1 at 2010-08-02 15:56:40) [GET]
+Rendering mythtv/getRecordings
+Completed in 33ms (View: 8, DB: 0) | 200 OK [http://localhost/mythtv/getRecordings]
+
+
+Processing MythtvController#getRecordings (for 127.0.0.1 at 2010-08-02 15:56:55) [GET]
+Rendering mythtv/getRecordings
+Completed in 28ms (View: 2, DB: 0) | 200 OK [http://localhost/mythtv/getRecordings]
+
+
+Processing MythtvController#getRecordings (for 127.0.0.1 at 2010-08-02 15:57:02) [GET]
+Rendering mythtv/getRecordings
+Completed in 28ms (View: 2, DB: 0) | 200 OK [http://localhost/mythtv/getRecordings]
+
+
+Processing MythtvController#getRecordings (for 127.0.0.1 at 2010-08-02 15:57:21) [GET]
+Rendering mythtv/getRecordings
+Completed in 28ms (View: 2, DB: 0) | 200 OK [http://localhost/mythtv/getRecordings]
+
+
+Processing MythtvController#getRecordings (for 127.0.0.1 at 2010-08-02 15:57:27) [GET]
+Rendering mythtv/getRecordings
+Completed in 27ms (View: 2, DB: 0) | 200 OK [http://localhost/mythtv/getRecordings]
+
+
+Processing MythtvController#getRecordings (for 127.0.0.1 at 2010-08-02 15:57:34) [GET]
+Rendering mythtv/getRecordings
+Completed in 28ms (View: 2, DB: 0) | 200 OK [http://localhost/mythtv/getRecordings]
+
+
+Processing MythtvController#getRecordings (for 127.0.0.1 at 2010-08-02 15:57:41) [GET]
+Rendering mythtv/getRecordings
+Completed in 27ms (View: 2, DB: 0) | 200 OK [http://localhost/mythtv/getRecordings]
+
+
+Processing MythtvController#getRecordings (for 127.0.0.1 at 2010-08-02 15:57:48) [GET]
+Rendering mythtv/getRecordings
+Completed in 74ms (View: 48, DB: 0) | 200 OK [http://localhost/mythtv/getRecordings]
+
+
+Processing MythtvController#getRecordings (for 127.0.0.1 at 2010-08-02 15:57:54) [GET]
+Rendering mythtv/getRecordings
+Completed in 28ms (View: 3, DB: 0) | 200 OK [http://localhost/mythtv/getRecordings]
+
+
+Processing MythtvController#getRecordings (for 127.0.0.1 at 2010-08-02 15:58:45) [GET]
+Rendering mythtv/getRecordings
+Completed in 28ms (View: 2, DB: 0) | 200 OK [http://localhost/mythtv/getRecordings]
+
+
+Processing MythtvController#getRecordings (for 127.0.0.1 at 2010-08-02 15:59:54) [GET]
+Rendering mythtv/getRecordings
+Completed in 36ms (View: 8, DB: 0) | 200 OK [http://localhost/mythtv/getRecordings]
+
+
+Processing MythtvController#getRecordings (for 127.0.0.1 at 2010-08-02 16:00:20) [GET]
+Rendering mythtv/getRecordings
+Completed in 28ms (View: 3, DB: 0) | 200 OK [http://localhost/mythtv/getRecordings]
+
+
+Processing MythtvController#getRecordings (for 127.0.0.1 at 2010-08-02 16:02:05) [GET]
+Rendering mythtv/getRecordings
+Completed in 34ms (View: 9, DB: 0) | 200 OK [http://localhost/mythtv/getRecordings]
+
+
+Processing MythtvController#getRecordings (for 127.0.0.1 at 2010-08-02 16:02:46) [GET]
+Rendering mythtv/getRecordings
+Completed in 103ms (View: 59, DB: 0) | 200 OK [http://localhost/mythtv/getRecordings]
+
+
+Processing MythtvController#getRecordings (for 127.0.0.1 at 2010-08-02 16:04:34) [GET]
+Rendering mythtv/getRecordings
+Completed in 28ms (View: 3, DB: 0) | 200 OK [http://localhost/mythtv/getRecordings]
+
+
+Processing MythtvController#getRecordings (for 127.0.0.1 at 2010-08-02 16:04:46) [GET]
+Rendering mythtv/getRecordings
+Completed in 29ms (View: 3, DB: 0) | 200 OK [http://localhost/mythtv/getRecordings]
+
+
+Processing MythtvController#getRecordings (for 127.0.0.1 at 2010-08-02 18:28:05) [GET]
+Rendering mythtv/getRecordings
+Completed in 33ms (View: 8, DB: 0) | 200 OK [http://localhost/mythtv/getRecordings]
+
+
+Processing MythtvController#getScheduledRecordings (for 127.0.0.1 at 2010-08-02 18:28:38) [GET]
+Rendering mythtv/getScheduledRecordings
+Completed in 56ms (View: 15, DB: 0) | 200 OK [http://localhost/mythtv/getScheduledRecordings]
+=======
 Processing MythtvController#getRecordings (for 127.0.0.1 at 2010-04-10 09:02:46) [GET]
 
 NameError (undefined local variable or method `isConnected' for #<MythtvController:0x3804c00>):
@@ -2185,3 +2888,63 @@ ActionController::RoutingError (No route matches "/stylesheets/listArrowSel.png"
   C:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
 
 Rendering rescues/layout (not_found)
+>>>>>>> d08567c61bda870c10daaf2951fa68c6dd14cb38
+
+
+Processing ApplicationController#getRecordings (for 127.0.0.1 at 2010-08-02 19:58:13) [GET]
+
+SyntaxError (/Users/harry/Sites/MythTvOnRails/app/controllers/mythtv_controller.rb:8: syntax error, unexpected tLSHFT, expecting kEND
+<<<<<<< HEAD
+  ^
+/Users/harry/Sites/MythTvOnRails/app/controllers/mythtv_controller.rb:16: syntax error, unexpected tEQQ, expecting kEND
+=======
+   ^
+/Users/harry/Sites/MythTvOnRails/app/controllers/mythtv_controller.rb:21: syntax error, unexpected tRSHFT, expecting kEND
+>>>>>>> d08567c61bda870c10daaf2951fa68c6dd14cb38
+  ^
+/Users/harry/Sites/MythTvOnRails/app/controllers/mythtv_controller.rb:85: syntax error, unexpected tLSHFT, expecting kEND
+<<<<<<< HEAD
+  ^
+/Users/harry/Sites/MythTvOnRails/app/controllers/mythtv_controller.rb:97: syntax error, unexpected tEQQ, expecting kEND
+=======
+   ^
+/Users/harry/Sites/MythTvOnRails/app/controllers/mythtv_controller.rb:103: syntax error, unexpected tRSHFT, expecting kEND
+>>>>>>> d08567c61bda870c10daaf2951fa68c6dd14cb38
+  ^):
+  
+
+Rendered rescues/_trace (81.9ms)
+Rendered rescues/_request_and_response (1.9ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ApplicationController#getRecordings (for 127.0.0.1 at 2010-08-02 19:58:14) [GET]
+
+SyntaxError (/Users/harry/Sites/MythTvOnRails/app/controllers/mythtv_controller.rb:8: syntax error, unexpected tLSHFT, expecting kEND
+<<<<<<< HEAD
+  ^
+/Users/harry/Sites/MythTvOnRails/app/controllers/mythtv_controller.rb:16: syntax error, unexpected tEQQ, expecting kEND
+=======
+   ^
+/Users/harry/Sites/MythTvOnRails/app/controllers/mythtv_controller.rb:21: syntax error, unexpected tRSHFT, expecting kEND
+>>>>>>> d08567c61bda870c10daaf2951fa68c6dd14cb38
+  ^
+/Users/harry/Sites/MythTvOnRails/app/controllers/mythtv_controller.rb:85: syntax error, unexpected tLSHFT, expecting kEND
+<<<<<<< HEAD
+  ^
+/Users/harry/Sites/MythTvOnRails/app/controllers/mythtv_controller.rb:97: syntax error, unexpected tEQQ, expecting kEND
+=======
+   ^
+/Users/harry/Sites/MythTvOnRails/app/controllers/mythtv_controller.rb:103: syntax error, unexpected tRSHFT, expecting kEND
+>>>>>>> d08567c61bda870c10daaf2951fa68c6dd14cb38
+  ^):
+  
+
+Rendered rescues/_trace (35.7ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing MythtvController#getRecordings (for 127.0.0.1 at 2010-08-02 19:58:24) [GET]
+Rendering mythtv/getRecordings
+Completed in 88ms (View: 8, DB: 0) | 200 OK [http://localhost/mythtv/getRecordings]
