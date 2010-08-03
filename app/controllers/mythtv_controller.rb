@@ -1,6 +1,7 @@
 require 'socket'
 class MythtvController < ApplicationController
   def getRecordings
+    #this is a test
     connect()
     executeCommand("QUERY_RECORDINGS Delete")
     @recordings = populateRecordings(getCommandResponse())
