@@ -10,7 +10,7 @@ class MythtvController < ApplicationController
 
   def getRecordings
     @mythServer.executeCommand("QUERY_RECORDINGS Delete")
-    @recordings = @mythServer.populateRecordings(getCommandResponse(), 0)
+    @recordings = @mythServer.populateRecordings(@mythServer.getCommandResponse(), 0)
   end
 
   def getScheduledRecordings

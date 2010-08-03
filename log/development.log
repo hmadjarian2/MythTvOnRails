@@ -3244,3 +3244,8 @@ NoMethodError (undefined method `recv' for nil:NilClass):
 Rendered rescues/_trace (140.6ms)
 Rendered rescues/_request_and_response (0.0ms)
 Rendering rescues/layout (internal_server_error)
+
+
+Processing MythtvController#getRecordings (for 127.0.0.1 at 2010-08-02 22:56:34) [GET]
+Rendering mythtv/getRecordings
+Completed in 78ms (View: 31, DB: 0) | 200 OK [http://localhost/mythtv/getRecordings]
