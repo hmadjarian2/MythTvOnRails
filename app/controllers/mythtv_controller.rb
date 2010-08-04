@@ -1,21 +1,21 @@
 require 'socket'
 require 'ProgramInfoFields'
+require 'MythtvServer'
 
 class MythtvController < ApplicationController
   def initialize
-    connect()
+    @mythServer = MythTvServer.new("192.168.1.10")
+    @mythServer.connect()
   end
 
   def getRecordings
-    connect()
-    executeCommand("QUERY_RECORDINGS Delete")
-    @recordings = populateRecordings(getCommandResponse(), 0)
+    @mythServer.executeCommand("QUERY_RECORDINGS Delete")
+    @recordings = @mythServer.populateRecordings(@mythServer.getCommandResponse(), 0)
   end
 
   def getScheduledRecordings
     executeCommand("QUERY_GETALLPENDING")
     @recordings = populateRecordings(getCommandResponse(), 1)
-    #@response = getCommandResponse()
   end
 
   private
