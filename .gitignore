@@ -20,3 +20,4 @@ artifacts
 /product/config/app.config.xp
 /product/config/*.xml
 *.orig
+*.rb.bk
