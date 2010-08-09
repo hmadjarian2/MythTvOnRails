@@ -1,11 +1,13 @@
 require 'socket'
-require 'MythTvCommands'
-require 'ProgramInfoFields'
 
 class MythTvServer
   def initialize(server, port=6543)
     @server = server
     @port = port
+  end
+
+  def die!
+    disconnect()
   end
 
   def connect()
@@ -30,6 +32,18 @@ class MythTvServer
       @isConnected = false
     end
   end
+
+  def getAllRecordings()
+    executeCommand("QUERY_RECORDINGS Delete")
+    return populateRecordings(getCommandResponse(), 0)
+  end
+
+  def getUpcomingRecordings()
+    executeCommand(MythTvCommands::QUERY_UPCOMING_RECORDINGS)
+    return populateRecordings(getCommandResponse(), 1).select{|recording|recording.recstatus == -1 || recording.recstatus == 1}
+  end
+
+  private
 
   def buildCommandString(command)
     return "%-8d%s" % [command.length, command]
@@ -77,6 +91,7 @@ class MythTvServer
       recording.channame = serverResponse[fieldIndex + ProgramInfoFields::CHANNAME]
       recording.starttime = Time.at(Integer(serverResponse[fieldIndex + ProgramInfoFields::STARTTIME]))
       recording.endtime = Time.at(Integer(serverResponse[fieldIndex + ProgramInfoFields::ENDTIME]))
+      recording.recstatus = Integer(serverResponse[fieldIndex + ProgramInfoFields::RECSTATUS])
       recording.playgroup = serverResponse[fieldIndex + 30]
       fieldIndex = fieldIndex + 47
       recordingIndex += 1

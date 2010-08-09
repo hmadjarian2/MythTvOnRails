@@ -3252,3 +3252,225 @@ Processing MythtvController#getRecordings (for 127.0.0.1 at 2010-08-02 22:56:34)
 Rendering mythtv/getRecordings
 Completed in 78ms (View: 31, DB: 0) | 200 OK [http://localhost/mythtv/getRecordings]
 >>>>>>> 586b2dc5972db593ea341517c6db99ab2ae06995
+
+
+Processing ApplicationController#getRecordings (for 127.0.0.1 at 2010-08-05 14:35:10) [GET]
+
+MissingSourceFile (no such file to load -- MythTvServer):
+  app/controllers/mythtv_controller.rb:3
+  script//server:3
+
+Rendered rescues/_trace (86.1ms)
+Rendered rescues/_request_and_response (2.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ApplicationController#getRecordings (for 127.0.0.1 at 2010-08-05 14:35:12) [GET]
+
+MissingSourceFile (no such file to load -- MythTvServer):
+  app/controllers/mythtv_controller.rb:3
+  script//server:3
+
+Rendered rescues/_trace (40.7ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing MythtvController#getRecordings (for 127.0.0.1 at 2010-08-05 14:36:00) [GET]
+Rendering mythtv/getRecordings
+Completed in 505ms (View: 75, DB: 0) | 200 OK [http://localhost/mythtv/getRecordings]
+
+
+Processing MythtvController#getRecordings (for 127.0.0.1 at 2010-08-05 14:37:33) [GET]
+Rendering mythtv/getRecordings
+Completed in 26ms (View: 2, DB: 0) | 200 OK [http://localhost/mythtv/getRecordings]
+
+
+Processing MythtvController#getScheduledRecordings (for 127.0.0.1 at 2010-08-05 14:47:15) [GET]
+
+NoMethodError (undefined method `write' for nil:NilClass):
+  app/controllers/mythtv_controller.rb:51:in `executeCommand'
+  app/controllers/mythtv_controller.rb:17:in `getScheduledRecordings'
+
+Rendered rescues/_trace (42.1ms)
+Rendered rescues/_request_and_response (2.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing MythtvController#getScheduledRecordings (for 127.0.0.1 at 2010-08-05 14:47:53) [GET]
+Rendering mythtv/getScheduledRecordings
+Completed in 142ms (View: 41, DB: 0) | 200 OK [http://localhost/mythtv/getScheduledRecordings]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-08 15:58:37) [GET]
+
+ActionController::RoutingError (No route matches "/getRecordings" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#getRecordings (for 127.0.0.1 at 2010-08-08 15:58:56) [GET]
+
+MissingSourceFile (no such file to load -- MythTvCommands):
+  app/models/myth_tv_server.rb:2
+  app/controllers/mythtv_controller.rb:5:in `initialize'
+
+Rendered rescues/_trace (42.0ms)
+Rendered rescues/_request_and_response (21.1ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing MythtvController#getRecordings (for 127.0.0.1 at 2010-08-08 15:59:09) [GET]
+Rendering mythtv/getRecordings
+Completed in 115ms (View: 43, DB: 0) | 200 OK [http://localhost/mythtv/getRecordings]
+
+
+Processing MythtvController#getRecordings (for 127.0.0.1 at 2010-08-08 16:30:14) [GET]
+Rendering mythtv/getRecordings
+Completed in 63ms (View: 2, DB: 0) | 200 OK [http://localhost/mythtv/getRecordings]
+
+
+Processing MythtvController#getRecordings (for 127.0.0.1 at 2010-08-08 16:30:16) [GET]
+Rendering mythtv/getRecordings
+Completed in 82ms (View: 2, DB: 0) | 200 OK [http://localhost/mythtv/getRecordings]
+
+
+Processing ApplicationController#getScheduledRecordings (for 127.0.0.1 at 2010-08-08 16:32:45) [GET]
+
+SyntaxError (/Users/harry/Sites/MythTvOnRails/app/controllers/mythtv_controller.rb:14: syntax error, unexpected ')', expecting kEND
+/Users/harry/Sites/MythTvOnRails/app/controllers/mythtv_controller.rb:96: syntax error, unexpected $end, expecting kEND):
+  
+
+Rendered rescues/_trace (39.9ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing MythtvController#getScheduledRecordings (for 127.0.0.1 at 2010-08-08 16:33:01) [GET]
+
+NoMethodError (undefined method `getCommandResponse' for nil:NilClass):
+  app/models/myth_tv_server.rb:39:in `getScheduledRecordings'
+  app/controllers/mythtv_controller.rb:14:in `getScheduledRecordings'
+
+Rendered rescues/_trace (39.7ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing MythtvController#getScheduledRecordings (for 127.0.0.1 at 2010-08-08 16:33:19) [GET]
+Rendering mythtv/getScheduledRecordings
+Completed in 68ms (View: 32, DB: 0) | 200 OK [http://localhost/mythtv/getScheduledRecordings]
+
+
+Processing MythtvController#getScheduledRecordings (for 127.0.0.1 at 2010-08-08 16:34:46) [GET]
+Rendering mythtv/getScheduledRecordings
+Completed in 44ms (View: 8, DB: 0) | 200 OK [http://localhost/mythtv/getScheduledRecordings]
+
+
+Processing MythtvController#getRecordings (for 127.0.0.1 at 2010-08-08 16:35:03) [GET]
+Rendering mythtv/getRecordings
+Completed in 26ms (View: 2, DB: 0) | 200 OK [http://localhost/mythtv/getRecordings]
+
+
+Processing MythtvController#getRecordings (for 127.0.0.1 at 2010-08-08 16:35:04) [GET]
+Rendering mythtv/getRecordings
+Completed in 26ms (View: 2, DB: 0) | 200 OK [http://localhost/mythtv/getRecordings]
+
+
+Processing MythtvController#getRecordings (for 127.0.0.1 at 2010-08-08 16:35:04) [GET]
+Rendering mythtv/getRecordings
+Completed in 26ms (View: 2, DB: 0) | 200 OK [http://localhost/mythtv/getRecordings]
+
+
+Processing MythtvController#getScheduledRecordings (for 127.0.0.1 at 2010-08-08 17:01:34) [GET]
+Rendering mythtv/getScheduledRecordings
+Completed in 50ms (View: 14, DB: 0) | 200 OK [http://localhost/mythtv/getScheduledRecordings]
+
+
+Processing MythtvController#getScheduledRecordings (for 127.0.0.1 at 2010-08-08 17:34:19) [GET]
+Rendering mythtv/getScheduledRecordings
+Completed in 93ms (View: 1, DB: 0) | 200 OK [http://localhost/mythtv/getScheduledRecordings]
+
+
+Processing MythtvController#getScheduledRecordings (for 127.0.0.1 at 2010-08-08 17:34:42) [GET]
+Rendering mythtv/getScheduledRecordings
+Completed in 37ms (View: 1, DB: 0) | 200 OK [http://localhost/mythtv/getScheduledRecordings]
+
+
+Processing MythtvController#getScheduledRecordings (for 127.0.0.1 at 2010-08-08 17:34:53) [GET]
+Rendering mythtv/getScheduledRecordings
+Completed in 37ms (View: 1, DB: 0) | 200 OK [http://localhost/mythtv/getScheduledRecordings]
+
+
+Processing MythtvController#getScheduledRecordings (for 127.0.0.1 at 2010-08-08 17:35:10) [GET]
+Rendering mythtv/getScheduledRecordings
+Completed in 93ms (View: 9, DB: 0) | 200 OK [http://localhost/mythtv/getScheduledRecordings]
+
+
+Processing MythtvController#getScheduledRecordings (for 127.0.0.1 at 2010-08-08 17:37:40) [GET]
+Rendering mythtv/getScheduledRecordings
+Completed in 36ms (View: 1, DB: 0) | 200 OK [http://localhost/mythtv/getScheduledRecordings]
+
+
+Processing MythtvController#getScheduledRecordings (for 127.0.0.1 at 2010-08-08 17:38:22) [GET]
+Rendering mythtv/getScheduledRecordings
+Completed in 44ms (View: 3, DB: 0) | 200 OK [http://localhost/mythtv/getScheduledRecordings]
+
+
+Processing ApplicationController#getScheduledRecordings (for 127.0.0.1 at 2010-08-08 17:39:08) [GET]
+
+SyntaxError (/Users/harry/Sites/MythTvOnRails/app/models/myth_tv_server.rb:41: syntax error, unexpected '}', expecting kEND
+/Users/harry/Sites/MythTvOnRails/app/models/myth_tv_server.rb:99: syntax error, unexpected $end, expecting kEND):
+  app/controllers/mythtv_controller.rb:5:in `initialize'
+
+Rendered rescues/_trace (38.3ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing MythtvController#getScheduledRecordings (for 127.0.0.1 at 2010-08-08 17:39:19) [GET]
+Rendering mythtv/getScheduledRecordings
+Completed in 38ms (View: 3, DB: 0) | 200 OK [http://localhost/mythtv/getScheduledRecordings]
+
+
+Processing MythtvController#getScheduledRecordings (for 127.0.0.1 at 2010-08-08 17:45:22) [GET]
+
+NoMethodError (undefined method `getScheduledRecordings' for #<MythTvServer:0x265de50>):
+  app/controllers/mythtv_controller.rb:14:in `getScheduledRecordings'
+
+Rendered rescues/_trace (39.5ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing MythtvController#getScheduledRecordings (for 127.0.0.1 at 2010-08-08 17:45:48) [GET]
+Rendering mythtv/getScheduledRecordings
+Completed in 42ms (View: 3, DB: 0) | 200 OK [http://localhost/mythtv/getScheduledRecordings]
+
+
+Processing MythtvController#getScheduledRecordings (for 127.0.0.1 at 2010-08-08 19:53:40) [GET]
+Rendering mythtv/getScheduledRecordings
+Completed in 72ms (View: 1, DB: 0) | 200 OK [http://localhost/mythtv/getScheduledRecordings]
+
+
+Processing MythtvController#getScheduledRecordings (for 127.0.0.1 at 2010-08-08 19:54:59) [GET]
+Rendering mythtv/getScheduledRecordings
+Completed in 82ms (View: 3, DB: 0) | 200 OK [http://localhost/mythtv/getScheduledRecordings]
+
+
+Processing ApplicationController#getScheduledRecordings (for 127.0.0.1 at 2010-08-08 19:56:58) [GET]
+
+SyntaxError (/Users/harry/Sites/MythTvOnRails/app/models/myth_tv_server.rb:42: syntax error, unexpected ':', expecting kEND
+  private: 
+          ^):
+  app/controllers/mythtv_controller.rb:5:in `initialize'
+
+Rendered rescues/_trace (36.7ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing MythtvController#getScheduledRecordings (for 127.0.0.1 at 2010-08-08 19:57:07) [GET]
+Rendering mythtv/getScheduledRecordings
+Completed in 40ms (View: 3, DB: 0) | 200 OK [http://localhost/mythtv/getScheduledRecordings]
